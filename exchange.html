@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            box-shadow: 0 0 10;
+            width:fit-content;;
+            margin-left: 460px;
+            background-color: aqua;
+            margin-inline-end: 200px;
+        }
+        body{
+                  background-image: url("gissell.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+        input{
+            background-color: rgb(24, 188, 57);
+        }
+        button{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+        <center>
+        <h1>EXCHANGE INFO</h1>
+    <input  id="frw" type="text"  placeholder="ENTER MONEY IN RWF"><br></br>
+    <button onclick="exchange()">exchange</button><br></br>
+    <input id="usd" type="number" placeholder="dollar"><br></br>
+    
+    <button onclick="login()"><a href="HOMEPAGE.HTML">login</a></button><br></br>
+    
+    </center>
+<script>
+    function exchange(){
+        let frw= document.getElementById("frw").value;
+        let rate=1500;
+        let usd= frw / rate;
+        document.getElementById("usd").value = usd
+    }
+
+
+</script>
+    
+</body>
+</html>
